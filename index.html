@@ -218,16 +218,16 @@
 	for(let i = 0;i < specialTags.length; i++){
 		specialTags[i].classList.add('offset')
 	}
-	yyy()
+	findClosest()
 	window.onscroll = function(){
 		if(window.scrollY > 0){
 			topNavBar.classList.add('sticky')
 		} else{
 			topNavBar.classList.remove('sticky')
 		}
-		yyy()
+		findClosest()
 	}
-	function yyy(){
+	function findClosest(){
 		let specialTags = document.querySelectorAll('[data-x]')
 		let minIndex = 0
 		for(let i = 0;i < specialTags.length; i++){
